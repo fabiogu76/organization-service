@@ -23,7 +23,7 @@ public class OrganizationController {
 	
 	@PostMapping
 	public Organization add(@RequestBody Organization organization) {
-		LOGGER.info("Organization add: {}", organization);
+		LOGGER.info("Organization Test add: {}", organization);
 		return repository.save(organization);
 	}
 	
